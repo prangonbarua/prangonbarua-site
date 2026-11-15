@@ -356,6 +356,7 @@ ul, ol {
 .menu-links > div:nth-child(2) { animation-delay: 150ms; }
 .menu-links > div:nth-child(3) { animation-delay: 220ms; }
 .menu-links > div:nth-child(4) { animation-delay: 290ms; }
+.menu-links > div:nth-child(5) { animation-delay: 360ms; }
 
 @keyframes menu-link-in {
   from {
@@ -995,4 +996,101 @@ a.strip-card:focus-visible .strip-pill {
   text-transform: lowercase;
   letter-spacing: 0.02em;
   opacity: 0.6;
+}
+
+/* ---------------------------------------------------------------------- */
+/* experience page                                                          */
+/* ---------------------------------------------------------------------- */
+
+.xp-page .nav {
+  padding-bottom: 1rem;
+  background-color: var(--background-color);
+}
+
+.xp-main {
+  padding-top: calc(3vw + 6rem);
+  padding-bottom: 12vh;
+  font-family: var(--font-geist-mono);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.xp-title {
+  font-family: var(--font-playfair);
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.xp-lede {
+  margin-top: 0.75rem;
+  color: var(--muted-color);
+}
+
+.xp-h {
+  margin-top: 3.5rem;
+  font-size: 13px;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  color: var(--muted-color);
+}
+
+.xp-list {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.xp-main > .xp-list:first-of-type {
+  margin-top: 3rem;
+}
+
+.xp-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  column-gap: 1.5rem;
+  row-gap: 0.125rem;
+}
+
+.xp-meta {
+  white-space: nowrap;
+  font-size: 12px;
+  color: var(--muted-color);
+  font-variant-numeric: tabular-nums;
+}
+
+.xp-list p {
+  margin-top: 0.375rem;
+  max-width: 44rem;
+  color: var(--muted-color);
+}
+
+.xp-skills {
+  margin-top: 1.25rem;
+  max-width: 44rem;
+}
+
+.xp-links {
+  margin-top: 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  .xp-main {
+    padding-top: 9rem;
+    font-size: 15px;
+  }
+
+  .xp-title {
+    font-size: 40px;
+  }
+}
+
+/* small mono note under a project name on the mobile list */
+.plist-kicker {
+  margin-bottom: 0.375rem;
+  font-family: var(--font-geist-mono);
+  font-size: 12px;
+  color: var(--muted-color);
 }
